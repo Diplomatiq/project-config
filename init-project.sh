@@ -1,4 +1,5 @@
-# Example usage e.g. in the ~/projects/diplomatiq directory: bash ./project-config/create-project.sh project-name
+# Example usage e.g. in the ~/projects/diplomatiq directory:
+# bash ./project-config/init-project.sh projectname "GitHub description"
 # This will create a directory for the project in ~/project/diplomatiq and perform the necessary configuration there.
 
 projectUserName="Soma Lucz"
