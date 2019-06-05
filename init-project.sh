@@ -31,6 +31,7 @@ printf "# $projectName\n\n$description\n\n---\n\nCopyright (c) 2018 Diplomatiq\n
 cp $directoryOfThisScript/LICENSE .
 cp $directoryOfThisScript/.editorconfig .
 cp -r $directoryOfThisScript/.github .
+cp $directoryOfThisScript/.npmrc .
 
 git config --local user.name "$projectUserName"
 git config --local user.email $projectUserEmail
