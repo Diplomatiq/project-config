@@ -32,6 +32,7 @@ cp $directoryOfThisScript/LICENSE .
 cp $directoryOfThisScript/.editorconfig .
 cp -r $directoryOfThisScript/.github .
 cp $directoryOfThisScript/.npmrc .
+cp -r $directoryOfThisScript/.dependabot .
 
 git config --local user.name "$projectUserName"
 git config --local user.email $projectUserEmail
