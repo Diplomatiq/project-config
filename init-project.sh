@@ -42,6 +42,5 @@ git config --local commit.gpgsign $projectCommitGpgSign
 git remote add origin git@github.com:Diplomatiq/$projectName.git
 git add .
 git commit -m "Initial commit"
-git push -u origin master
 
 popd
