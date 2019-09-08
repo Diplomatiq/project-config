@@ -26,10 +26,12 @@ pushd $projectName
 git init
 printf "# $projectName\n\n$description\n\n---\n\nCopyright (c) 2018 Diplomatiq\n" > README.md
 
-cp $directoryOfThisScript/LICENSE .
-cp $directoryOfThisScript/.editorconfig .
-cp -r $directoryOfThisScript/.github .
 cp -r $directoryOfThisScript/.dependabot .
+cp -r $directoryOfThisScript/.github .
+cp $directoryOfThisScript/.editorconfig .
+cp $directoryOfThisScript/CODE_OF_CONDUCT.md .
+cp $directoryOfThisScript/LICENSE .
+cp $directoryOfThisScript/SECURITY.md .
 
 git config --local user.name "$projectUserName"
 git config --local user.email $projectUserEmail
