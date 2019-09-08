@@ -28,6 +28,7 @@ printf "# $projectName\n\n$description\n\n---\n\nCopyright (c) 2018 Diplomatiq\n
 
 cp -r $directoryOfThisScript/.dependabot .
 cp -r $directoryOfThisScript/.github .
+cp $directoryOfThisScript/.commitlintrc.json .
 cp $directoryOfThisScript/.editorconfig .
 cp $directoryOfThisScript/CODE_OF_CONDUCT.md .
 cp $directoryOfThisScript/LICENSE .
