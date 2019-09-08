@@ -4,8 +4,6 @@
 
 projectUserName="Soma Lucz"
 projectUserEmail="soma.lucz@diplomatiq.org"
-projectUserSigningKey="11B962F8C64804A7"
-projectCommitGpgSign=true
 
 if [[ $# -ne 2 ]]; then
     echo "Usage: bash init-project.sh projectname \"GitHub description\""
@@ -31,16 +29,13 @@ printf "# $projectName\n\n$description\n\n---\n\nCopyright (c) 2018 Diplomatiq\n
 cp $directoryOfThisScript/LICENSE .
 cp $directoryOfThisScript/.editorconfig .
 cp -r $directoryOfThisScript/.github .
-cp $directoryOfThisScript/.npmrc .
 cp -r $directoryOfThisScript/.dependabot .
 
 git config --local user.name "$projectUserName"
 git config --local user.email $projectUserEmail
-git config --local user.signingkey $projectUserSigningKey
-git config --local commit.gpgsign $projectCommitGpgSign
 
 git remote add origin git@github.com:Diplomatiq/$projectName.git
 git add .
-git commit -m "Initial commit"
+git commit -m "chore: Initial commit"
 
 popd
