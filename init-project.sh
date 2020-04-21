@@ -34,6 +34,7 @@ cp $directoryOfThisScript/CODE_OF_CONDUCT.md .
 cp $directoryOfThisScript/CONTRIBUTING.md .
 cp $directoryOfThisScript/LICENSE .
 cp $directoryOfThisScript/SECURITY.md .
+cp $directoryOfThisScript/logo.png .
 
 sed -i "" -e "s/PROJECTNAME/$projectName/g" ./.github/PULL_REQUEST_TEMPLATE.md
 sed -i "" -e "s/PROJECTNAME/$projectName/g" ./CONTRIBUTING.md
